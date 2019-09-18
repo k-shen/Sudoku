@@ -51,15 +51,15 @@ public class SudokuGUI {
                             if (e.getKeyCode() == KeyEvent.VK_ENTER){  //when enter key is pressed
                                 int in = Integer.parseInt(field.getText().trim());
 
-                                    if (checkValid(x, y, in)) {
-                                        field.setVisible(false);
-                                        label.setText(Integer.toString(in));
+                                if (checkValid(x, y, in)) {
+                                    field.setVisible(false);
+                                    label.setText(Integer.toString(in));
 
 
-                                        panels[x][y].add(label);  //add label to panel
-                                        label.setVisible(true);
-                                        panels[x][y].setVisible(true);
-                                    }
+                                    panels[x][y].add(label);  //add label to panel
+                                    label.setVisible(true);
+                                    panels[x][y].setVisible(true);
+                                }
 
                             }
                         }
